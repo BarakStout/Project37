@@ -1,0 +1,30 @@
+{
+  "name": "pt4",
+  "version": "1.0.0",
+  "description": "",
+
+  "proxy": "http://localhost:8080",
+  "scripts": {
+    "client": "cd client\\src && npm start",
+    "server": "cd server && npm start",
+    "start": "concurrently - kill-others \"npm run client\" \"npm run server\" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cors": "^2.8.5",
+    "create-react-context": "^0.2.3",
+    "http": "0.0.0",
+    "ip": "^1.1.5",
+    "path": "^0.12.7",
+    "prop-type": "0.0.1",
+    "prop-types": "^15.6.2",
+    "react": "^15.0.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.4.0-beta.6",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0"
+  }
+}
