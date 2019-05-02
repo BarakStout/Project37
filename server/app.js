@@ -21,7 +21,7 @@ var numUsers = 0;
 var users = [];
 
 server.listen(port, () => {
-  console.log('PolyQ Server listening at port %d', port);
+  console.log('pt4 Server listening at port %d', port);
   require('dns').lookup(require('os').hostname(), function (err, add, fam) {
     console.log('addr: '+add);
   });
